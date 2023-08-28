@@ -40,7 +40,7 @@
                 threshold: {
                     line: { color: "red", width: 4 },
                     thickness: 0.75,
-                    value: { cpu_metric }
+                    value: { cpu_metric }}
                 }
             }
         };
@@ -48,7 +48,7 @@
         var memGauge = {
             type: "indicator",
             mode: "gauge+number",
-            value: { mem_metric },
+            value: {{ mem_metric }},
             gauge: {
                 axis: { range: [null, 100] },
                 bar: { color: "#1f77b4" },
@@ -63,7 +63,7 @@
                 threshold: {
                     line: { color: "red", width: 4 },
                     thickness: 0.75,
-                    value: { mem_metric }
+                    value: {{ mem_metric }}
                 }
             }
         };
